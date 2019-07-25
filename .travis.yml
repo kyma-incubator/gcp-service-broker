@@ -9,6 +9,5 @@ services:
   - docker
 
 script:
-  - pwd
   - go test -v ./... -tags=service_broker
   - docker build -t gcp-service-broker .
